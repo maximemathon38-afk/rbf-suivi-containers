@@ -356,8 +356,8 @@ document.addEventListener("visibilitychange",()=>{if(document.visibilityState===
 async function init(){
   loadCache(); seedDemoState(); renderLoginNames();
   if(!DB.configured()){
-    $("#setupAlert").classList.remove("hidden");
-    $("#setupAlert").innerHTML="La V3 est prête, mais la base partagée n’est pas encore configurée. Renseignez <b>SUPABASE_URL</b> et <b>SUPABASE_ANON_KEY</b> dans <b>config.js</b> après avoir exécuté le fichier <b>supabase_schema.sql</b>.";
+    $("#setupAlert").classList.add("hidden");
+    
   } else {
     $("#setupAlert").classList.add("hidden");
     await sync({quiet:true});
