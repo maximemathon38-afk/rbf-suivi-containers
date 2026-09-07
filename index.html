@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#253b86">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Containers RB&F">
+  <title>RB&F — Suivi Containers V3.1</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="loginView" class="login-page">
+  <div class="login-card">
+    <div class="brand">
+      <img class="brand-logo" src="assets/rbf-logo.png" alt="RB&F">
+      <div class="brand-copy"><strong>RB&F — Suivi Containers</strong><small>Rosset Boulon & Fils · V3.1 connectée</small></div>
+    </div>
+    <div class="login-banner"><img src="assets/rbf-banner.png" alt="Rosset Boulon & Fils"></div>
+    <div id="setupAlert" class="setup-alert hidden"></div>
+    <h1>Choisissez votre nom</h1>
+    <p>Chaque chef accède directement à son container. Les modifications sont partagées avec l’administrateur.</p>
+    <div id="nameGrid" class="name-grid"><div class="empty" style="grid-column:1/-1">Chargement…</div></div>
+    <div class="admin-entry"><button class="btn btn-light btn-block" onclick="loginAdminPrompt()">⚙️ Accès administrateur</button></div>
+    <div class="install-hint">Sur téléphone ou ordinateur, cette application peut être installée depuis le navigateur une fois hébergée en HTTPS.</div>
+  </div>
+</div>
+
+<div id="appView" class="hidden">
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><img class="brand-logo" src="assets/rbf-logo.png" alt="RB&F"><div class="brand-copy"><strong>RB&F — Suivi Containers</strong><small id="roleSmall">Rosset Boulon & Fils</small></div></div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <div id="syncState" class="sync offline"><span class="sync-dot"></span><span class="sync-text">Connexion…</span></div>
+        <button class="btn btn-light btn-sm" onclick="logout()">Déconnexion</button>
+      </div>
+    </div>
+  </div>
+  <main class="page">
+    <section id="chefScreen" class="hidden"></section>
+    <section id="adminScreen" class="hidden"></section>
+  </main>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toast" class="toast hidden"></div>
+<script src="config.js"></script>
+<script src="db.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

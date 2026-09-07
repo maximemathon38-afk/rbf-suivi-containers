@@ -1,0 +1,24 @@
+{
+  "name": "RB&F — Suivi Containers",
+  "short_name": "Containers RB&F",
+  "description": "Inventaire et suivi du matériel des containers de chefs de chantier Rosset Boulon & Fils.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f8fc",
+  "theme_color": "#253b86",
+  "lang": "fr-FR",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
