@@ -105,3 +105,4 @@ const DB = {
     await api(`/catalog?id=eq.${encodeURIComponent(id)}`, {method:"DELETE"});
   }
 };
+
