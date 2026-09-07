@@ -1,7 +1,7 @@
 window.RBF_CONFIG = {
   SUPABASE_URL: "https://vlvbngmzbftnwufrpish.supabase.co",
 
-  SUPABASE_ANON_KEY: "COLLE_ICI_TA_CLE_SB_PUBLISHABLE",
+  SUPABASE_ANON_KEY: "sb_secret_WpPI2VvJ5I8An2iPrFaurw_8gtwM5Za",
 
   ADMIN_CODE: "RBF2026",
 
