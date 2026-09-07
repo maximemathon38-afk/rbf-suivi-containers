@@ -1,12 +1,9 @@
 window.RBF_CONFIG = {
-  // À renseigner après création du projet Supabase.
-  SUPABASE_URL: "",
-  SUPABASE_ANON_KEY: "",
+  SUPABASE_URL: "https://vlvbngmzbftnwufrpish.supabase.co",
 
-  // Protection légère de l'accès administrateur.
-  // Ce n'est PAS une authentification forte : changez cette valeur avant déploiement.
+  SUPABASE_ANON_KEY: "COLLE_ICI_TA_CLE_SB_PUBLISHABLE",
+
   ADMIN_CODE: "RBF2026",
 
-  // Rafraîchissement automatique des données partagées.
   REFRESH_INTERVAL_MS: 6000
 };
